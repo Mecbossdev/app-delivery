@@ -1,5 +1,6 @@
 'use client'
 
+import { useFilter } from '@/hooks/useFilter'
 import { Saira_Stencil_One as sairaStencilOne } from 'next/font/google'
 import styled from 'styled-components'
 import { CartControl } from './cart-control'
@@ -34,11 +35,16 @@ const Logo = styled.a`
 `
 
 export function Header(props: HeaderProps) {
+  const { setSearch, search } = useFilter()
   return (
     <TagHeader>
       <Logo className={sairaStencil.className}>E-commerce</Logo>
       <div>
-        <PrimaryInputSearchIcon placeholder="Procurando por algo específivo?" />
+        <PrimaryInputSearchIcon
+          value={search}
+          handleChange={setSearch}
+          placeholder="Procurando por algo específivo?"
+        />
         <CartControl />
       </div>
     </TagHeader>

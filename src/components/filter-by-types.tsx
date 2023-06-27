@@ -22,6 +22,7 @@ const FilterItem = styled.li<FilterItemProps>`
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 
   color: var(--text-dark);
 
@@ -45,14 +46,14 @@ export default function FilterByTypes() {
         Todos os produtos
       </FilterItem>
       <FilterItem
-        selected={type === FilterType.SHIRT}
-        onClick={() => handleChangeType(FilterType.SHIRT)}
+        selected={type === FilterType.MUG}
+        onClick={() => handleChangeType(FilterType.MUG)}
       >
         canecas
       </FilterItem>
       <FilterItem
-        selected={type === FilterType.MUG}
-        onClick={() => handleChangeType(FilterType.MUG)}
+        selected={type === FilterType.SHIRT}
+        onClick={() => handleChangeType(FilterType.SHIRT)}
       >
         camisetas
       </FilterItem>
