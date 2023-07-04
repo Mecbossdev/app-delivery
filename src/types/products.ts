@@ -3,4 +3,12 @@ export interface Products {
   price_in_cents: number
   id: string
   image_url: string
+  category?: string
+  description?: string
+}
+
+export interface ProductFetchResponse {
+  data: {
+    Product: Products
+  }
 }
