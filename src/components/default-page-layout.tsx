@@ -8,6 +8,6 @@ export const DefaultPageLayout = styled.div`
   background: var(--bg-primary);
 
   @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
-    padding: 34px 160px;
+    padding: 34px 180px;
   }
 `

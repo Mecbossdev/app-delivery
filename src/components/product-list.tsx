@@ -6,11 +6,11 @@ export interface ProductListProps {}
 
 const ListContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 256px);
-  grid-gap: 32px;
+  grid-template-columns: repeat(auto-fill, 180px);
+  grid-gap: 60px;
   max-width: 100%;
-
-  margin-top: 32px;
+  margin-top: 60px;
+  margin-bottom: 66px;
 `
 
 export function ProductList(props: ProductListProps) {

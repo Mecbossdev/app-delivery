@@ -1,6 +1,7 @@
+'use client'
 import { useLocalStorage } from '@/hooks/useLocalStorage'
+import { ShoppingCart } from 'lucide-react'
 import styled from 'styled-components'
-import { CartIcon } from './icons/cart-icon'
 
 const CartCount = styled.span`
   width: 17px;
@@ -23,9 +24,9 @@ export function CartControl() {
 
   return (
     <Container>
-      <CartIcon />
+      <ShoppingCart size={30} />
 
-      {value.length && <CartCount>{value.length}</CartCount>}
+      {value.length ? <CartCount>{value.length}</CartCount> : 0}
     </Container>
   )
 }

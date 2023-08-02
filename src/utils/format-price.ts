@@ -1,6 +1,6 @@
 export function formatPrice(valueInCents: number) {
-  const valorEmReais = valueInCents / 100
-  return valorEmReais.toLocaleString('pt-BR', {
+  const formattedValue = valueInCents / 100
+  return formattedValue.toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL',
   })

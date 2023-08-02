@@ -7,12 +7,12 @@ export const PrimaryInput = styled.input`
   border-radius: 8px;
   border: none;
   padding: 10px 16px;
-  background-color: var(--bg-secodary);
+  background-color: var(--bg-secondary);
   font-family: inherit;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
-  color: var(--text-drak);
+  color: var(--text-dark);
 
   @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
     font-size: 14px;
@@ -22,7 +22,7 @@ export const PrimaryInput = styled.input`
 
 const InputContainer = styled.div`
   position: relative;
-  width: 250px;
+  width: 280px;
 
   svg {
     position: absolute;
@@ -32,7 +32,7 @@ const InputContainer = styled.div`
   }
 
   @media (min-width: ${(props) => props.theme.desktopBreakpoint}) {
-    width: 352px;
+    width: 100%;
   }
 `
 
